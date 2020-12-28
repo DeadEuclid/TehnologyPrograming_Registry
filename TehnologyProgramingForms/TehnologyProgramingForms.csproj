@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CBE5605-3B29-478C-ACE4-D962301C364B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TehnologyProgramingForms</RootNamespace>
+    <AssemblyName>TehnologyProgramingForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TehnologyProgramingForms.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocForms\DocAutorizationSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForms\DocAutorizationSelector.Designer.cs">
+      <DependentUpon>DocAutorizationSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocForms\DocAutorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForms\DocAutorize.Designer.cs">
+      <DependentUpon>DocAutorize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocForms\DocDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForms\DocDelete.Designer.cs">
+      <DependentUpon>DocDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocForms\DocRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForms\DocRegistration.Designer.cs">
+      <DependentUpon>DocRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocForms\MainDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocForms\MainDocForm.Designer.cs">
+      <DependentUpon>MainDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MangegerForms\ManagerMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MangegerForms\ManagerMainForm.Designer.cs">
+      <DependentUpon>ManagerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\AddTalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\AddTalon.Designer.cs">
+      <DependentUpon>AddTalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\MainPatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\MainPatForm.Designer.cs">
+      <DependentUpon>MainPatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\PatDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\PatDelete.Designer.cs">
+      <DependentUpon>PatDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\PatAutorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\PatAutorization.Designer.cs">
+      <DependentUpon>PatAutorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\PatRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\PatRegistration.Designer.cs">
+      <DependentUpon>PatRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatForms\PatAutorizationSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatForms\PatAutorizationSelector.Designer.cs">
+      <DependentUpon>PatAutorizationSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleChoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleChoise.Designer.cs">
+      <DependentUpon>RoleChoise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilites.cs" />
+    <EmbeddedResource Include="DocForms\DocAutorizationSelector.resx">
+      <DependentUpon>DocAutorizationSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForms\DocAutorize.resx">
+      <DependentUpon>DocAutorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForms\DocDelete.resx">
+      <DependentUpon>DocDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForms\DocRegistration.resx">
+      <DependentUpon>DocRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocForms\MainDocForm.resx">
+      <DependentUpon>MainDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MangegerForms\ManagerMainForm.resx">
+      <DependentUpon>ManagerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\AddTalon.resx">
+      <DependentUpon>AddTalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\MainPatForm.resx">
+      <DependentUpon>MainPatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\PatAutorization.resx">
+      <DependentUpon>PatAutorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\PatDelete.resx">
+      <DependentUpon>PatDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\PatRegistration.resx">
+      <DependentUpon>PatRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatForms\PatAutorizationSelector.resx">
+      <DependentUpon>PatAutorizationSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleChoise.resx">
+      <DependentUpon>RoleChoise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataUtilites\DataUtilites.csproj">
+      <Project>{4DA25A2B-B0A0-4470-853E-F02E53B13916}</Project>
+      <Name>DataUtilites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TehnologyProgramingModels\TehnologyProgramingModels.csproj">
+      <Project>{D03C6E70-DEE1-476E-B720-83837310FA35}</Project>
+      <Name>TehnologyProgramingModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TehnologyProgramingReposytory\TehnologyProgramingReposytory.csproj">
+      <Project>{7865adf7-48a9-41ac-a2a0-f7937f7c4b64}</Project>
+      <Name>TehnologyProgramingReposytory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validatores\Validatores.csproj">
+      <Project>{45c75e36-67fd-4d55-b7db-e71b28ebf0bf}</Project>
+      <Name>Validatores</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
